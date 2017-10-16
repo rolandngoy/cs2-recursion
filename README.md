@@ -1,7 +1,7 @@
 # Examples on Recursion
 
 ## SumToInt
-The ```SumToInt``` class contains two implementations the following sumTo(n)
+The ```SumToInt``` class contains two implementations of the following sumTo(n)
 function.
 
 Definition: sumTo(n) adds integers from 1 to n:
@@ -31,6 +31,7 @@ Note: ```1024``` means 1024K (1M).
 You can change the stack size to avoid the stack overflow problem:
 ```
 java -Xss10M SumToInt
+sumTo(100000)=705082704
 ```
 
 You can also use the iterative method ```sumTo1()``` to compute
