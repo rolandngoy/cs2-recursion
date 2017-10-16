@@ -48,6 +48,8 @@ SumToInt.java:3: error: integer number too large: 10000000000
 1 error
 sumTo(1000000000)=-243309312
 ```
+Check out [this guide](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+for the nuts and bolts of Java primitive data types.
 
 ## SumToLong
 The ```SumToInt``` class uses integers to store the result which fails when n
