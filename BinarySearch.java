@@ -1,7 +1,10 @@
 public class BinarySearch{
   public static void main(String[] args){
-    int[] list = {1, 3, 4, 7, 8, 10};
-    System.out.println(search(list, 10));
+    int[] list = new int[100];
+    for(int i=0; i<100; i++){
+      list[i] = 2*i;
+    }
+    System.out.println(search(list, 79));
   }
 
   public static int search(int[] list, int target){
@@ -9,6 +12,12 @@ public class BinarySearch{
   }
 
   public static int find_rc(int[] list, int left, int right, int target){
+    // size 0 problem
+    if (left > right){
+      return -1;
+    }
+
+    // size 1 problem
     if(left == right){
       if(target == list[left]){
         return left;
@@ -17,6 +26,7 @@ public class BinarySearch{
       }
     }
 
+    // size 2 problem
     if(left + 1 == right){
       if(target == list[left]){
         return left;
@@ -27,6 +37,7 @@ public class BinarySearch{
       }
     }
 
+    // size >= 3 problem
     int middle = (int) Math.floor((left+right)/2);
     if(target == list[middle]){
       return middle;
