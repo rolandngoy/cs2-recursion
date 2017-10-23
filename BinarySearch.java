@@ -1,11 +1,4 @@
 public class BinarySearch{
-  public static void main(String[] args){
-    int[] list = new int[100];
-    for(int i=0; i<100; i++){
-      list[i] = 2*i;
-    }
-    System.out.println(search(list, 79));
-  }
 
   public static int search(int[] list, int target){
     return find_rc(list, 0, list.length-1, target);
