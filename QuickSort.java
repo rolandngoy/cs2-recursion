@@ -19,6 +19,7 @@ public class QuickSort{
         // swap
         swap(array, left, right);
       }
+      return array;
     }
 
     // size > 2 case: sort it recursively
