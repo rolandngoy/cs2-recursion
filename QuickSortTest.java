@@ -15,9 +15,27 @@ public class QuickSortTest{
     printArray(array);
 
     // test sort()
-    array = new int[]{5, 4, 3, 2, 1};
+    array = new int[]{1};
     System.out.println("expect:\ttrue");
     int[] result = QuickSort.sort(array);
+    System.out.println("got:\t"+isAscending(result));
+    printArray(array);
+
+    array = new int[]{2, 1};
+    System.out.println("expect:\ttrue");
+    result = QuickSort.sort(array);
+    System.out.println("got:\t"+isAscending(result));
+    printArray(array);
+
+    array = new int[]{3, 2, 1};
+    System.out.println("expect:\ttrue");
+    result = QuickSort.sort(array);
+    System.out.println("got:\t"+isAscending(result));
+    printArray(array);
+
+    array = new int[]{5, 4, 3, 2, 1};
+    System.out.println("expect:\ttrue");
+    result = QuickSort.sort(array);
     System.out.println("got:\t"+isAscending(result));
     printArray(array);
 
