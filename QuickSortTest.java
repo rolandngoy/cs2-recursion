@@ -5,10 +5,12 @@ public class QuickSortTest{
     System.out.println("expect:\t2");
     System.out.println("got:\t"+QuickSort.partition(array, 0, 4));
     printArray(array);
+
     array = new int[]{5, 4, 1, 2, 3};
     System.out.println("expect:\t0");
     System.out.println("got:\t"+QuickSort.partition(array, 0, 4));
     printArray(array);
+
     array = new int[]{3, 4, 5, 2, 1};
     System.out.println("expect:\t4");
     System.out.println("got:\t"+QuickSort.partition(array, 0, 4));
@@ -16,36 +18,41 @@ public class QuickSortTest{
 
     // test sort()
     array = new int[]{1};
+    System.out.println("Is the array sorted?");
     System.out.println("expect:\ttrue");
-    int[] result = QuickSort.sort(array);
-    System.out.println("got:\t"+isAscending(result));
+    QuickSort.sort(array);
+    System.out.println("got:\t"+isAscending(array));
     printArray(array);
 
     array = new int[]{2, 1};
+    System.out.println("Is the array sorted?");
     System.out.println("expect:\ttrue");
-    result = QuickSort.sort(array);
-    System.out.println("got:\t"+isAscending(result));
+    QuickSort.sort(array);
+    System.out.println("got:\t"+isAscending(array));
     printArray(array);
 
     array = new int[]{3, 2, 1};
+    System.out.println("Is the array sorted?");
     System.out.println("expect:\ttrue");
-    result = QuickSort.sort(array);
-    System.out.println("got:\t"+isAscending(result));
+    QuickSort.sort(array);
+    System.out.println("got:\t"+isAscending(array));
     printArray(array);
 
     array = new int[]{5, 4, 3, 2, 1};
+    System.out.println("Is the array sorted?");
     System.out.println("expect:\ttrue");
-    result = QuickSort.sort(array);
-    System.out.println("got:\t"+isAscending(result));
+    QuickSort.sort(array);
+    System.out.println("got:\t"+isAscending(array));
     printArray(array);
 
     array = new int[100];
     for(int i=0; i<100; i++){
       array[i] = 100-i;
     }
+    System.out.println("Is the array sorted?");
     System.out.println("expect:\ttrue");
-    result = QuickSort.sort(array);
-    System.out.println("got:\t"+isAscending(result));
+    QuickSort.sort(array);
+    System.out.println("got:\t"+isAscending(array));
     printArray(array);
   }
 
